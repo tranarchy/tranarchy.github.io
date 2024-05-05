@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'The One True Font System 8x12';
+    src: url('totfs.ttf') ;
+}
+
+html {
+    cursor: url('images/cursor.png'), default;
+    min-height: 100vh;
+}
+
+body {
+    background: linear-gradient(#00000080, #00000080), url('images/bg.gif'), repeat;
+    color: #fff;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: 'The One True Font System 8x12';
+    font-size: 22px;
+}
+
+a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: url('images/pointer.png'), pointer;
+}
+
+header {
+    border: 2px solid #5f44c4;
+    background-color: #1a18186e;
+}
+
+header a {
+    display: inline-block;
+    padding: 10px;
+    color: inherit;
+    font-size: 26px;
+}
+
+header a:hover {
+    font-weight: bold;
+}
+
+main {
+    margin-top: 28px;
+    padding: 0px 15px 0px 15px;
+    border: 2px solid #5f44c4;
+    background-color: #1a18186e;
+    text-align: justify;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   margin-left: 26px;
+}
+
+li {
+    list-style: none;
+}
+
+main li:before {
+        content: '> ';
+}
+
+.code {
+    background-color: #000;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.buttons img {
+    padding: 6px;
+}
+
+main h1, .purple, a, .code {
+    color: #5f44c4;
+}
+
+.rainbow, .heart:hover {
+   animation: rainbow 6s infinite;
+   font-weight: bold;
+}
+
+
+@keyframes rainbow{
+  0%{color: #f1ad2e;}	
+  10%{color: #921f92;}	
+  20%{color: #f74040;}
+  30%{color: #83c8ca;}
+  40%{color: #e7e75a;}
+  50%{color: #ff7f50;}
+  60%{color: #52ec52;}
+  70%{color: #00ffff;}
+  80%{color: #e73e98;}
+  90%{color: #5aa1e9;}
+  100%{color: #f5bc52;}
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    footer {
+        position: unset;
+        text-align: center;
+    }
+}
