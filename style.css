@@ -10,9 +10,9 @@ html {
 
 body {
     background: linear-gradient(#00000080, #00000080), url('images/bg.gif'), repeat;
-    color: #fff;
-    margin-left: 30%;
-    margin-right: 30%;
+    color: #f8f8f2;
+    width: fit-content;
+    margin: auto;
     font-family: 'The One True Font System 8x12';
     font-size: 22px;
 }
@@ -44,7 +44,7 @@ header a:hover {
 
 main {
     margin-top: 28px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 18px 0px 18px;
     border: 2px solid #5f44c4;
     background-color: #1a18186e;
     text-align: justify;
@@ -112,8 +112,8 @@ main h1, .purple, a, .code {
 
 @media only screen and (max-width: 1000px) {
     body {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     footer {
